@@ -10,7 +10,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .post("https://hoblist.com/api/movieList", {
+    .post("https://cors-anywhere.herokuapp.com/https://hoblist.com/api/movieList", {
         category: "movies",
         language: "kannada",
         genre: "all",
