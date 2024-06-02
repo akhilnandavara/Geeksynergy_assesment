@@ -60,7 +60,13 @@ button {
   color: white;
   cursor: pointer;
   background-color: #11a1ee;
+  width: 100%;
 }
+
+button:hover {
+  background-color: #007BFF;
+}
+
 .bg-diabled{
   background-color: #ccc;
   cursor: not-allowed;

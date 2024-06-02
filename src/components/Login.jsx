@@ -18,7 +18,7 @@ const Login = () => {
       storedUser.name.toLowerCase() === credentials.name.toLowerCase() &&
       storedUser.password === credentials.password
     ) {
-      navigate("/home")
+      navigate("/home");
     } else {
       alert("Invalid Credentials");
     }
@@ -26,29 +26,28 @@ const Login = () => {
 
   return (
     <div className="form-container">
-    <form onSubmit={handleSubmit} className="signup-form">
-      <input
-        type="text"
-        name="name"
-        placeholder="Name"
-        value={credentials.name}
-        onChange={handleChange}
-        required
-       
-      />
-      <input
-        type="password"
-        name="password"
-        placeholder="Password"
-        value={credentials.password}
-        onChange={handleChange}
-        required
-      />
-      <button type="submit">Login</button>
-      <button>
-        <Link to={"/"}>Signup</Link>
-      </button>
-    </form>
+      <form onSubmit={handleSubmit} className="signup-form">
+        <input
+          type="text"
+          name="name"
+          placeholder="Name"
+          value={credentials.name}
+          onChange={handleChange}
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          value={credentials.password}
+          onChange={handleChange}
+          required
+        />
+        <button type="submit">Login</button>
+        <Link to={"/"}>
+          <button>Signup</button>
+        </Link>
+      </form>
     </div>
   );
 };
