@@ -25,7 +25,8 @@ const Login = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <div className="form-container">
+    <form onSubmit={handleSubmit} className="signup-form">
       <input
         type="text"
         name="name"
@@ -33,6 +34,7 @@ const Login = () => {
         value={credentials.name}
         onChange={handleChange}
         required
+       
       />
       <input
         type="password"
@@ -47,6 +49,7 @@ const Login = () => {
         <Link to={"/"}>Signup</Link>
       </button>
     </form>
+    </div>
   );
 };
 

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
 import { BiSolidUpArrow, BiSolidDownArrow } from "react-icons/bi";
 import CompanyInfo from "./CompanyInfo";
 
